@@ -13,22 +13,30 @@ struct HouseDetail: View {
     
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading) {
+            VStack {
                 Group {
-                    Text(house.name)
-                    Text("Founded by " + house.founder)
-                    Text("Heads of House: ")
+                    Text(house.name).font(.title)
+                    Text("Founded by " + house.founder).font(.subheadline)
+                }
+                Spacer()
+                VStack {
+                    Text("Heads of House: ").font(.headline)
                     HeadView(heads: house.heads)
                 }
-                Group {
+                Spacer()
+                VStack {
+                    Text("House Details").font(.headline)
                     Text("House Colors: " + house.houseColours)
                     Text("Animal: " + house.animal)
                     Text("Element: " + house.element)
                     Text("Ghost: " + house.ghost)
                     Text("Common Room: " + house.commonRoom)
                 }
-                Text("Notable traits: ")
-                TraitsView(traits: house.traits)
+                Spacer()
+                VStack {
+                    Text("Notable traits: ").font(.headline)
+                    TraitsView(traits: house.traits)
+                }
             }
         }
     }

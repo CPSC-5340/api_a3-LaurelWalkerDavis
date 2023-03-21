@@ -12,14 +12,12 @@ struct HeadView: View {
     var heads : [HeadModel]
     
     var body: some View {
-        VStack(alignment: .leading) {
-            ForEach(heads) { head in
-                HStack {
-                    Text(head.firstName)
-                    Text(head.lastName)                    
-                }
+        ForEach(heads) { head in
+            HStack {
+                Text(head.firstName)
+                Text(head.lastName)
             }
-        }
+        }        
     }
 }
 

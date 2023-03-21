@@ -12,11 +12,9 @@ struct TraitsView: View {
     var traits : [TraitsModel]
     
     var body: some View {
-        VStack(alignment: .leading) {
             ForEach(traits) { traits in
                 Text(traits.name)
-            }
-        }
+            }        
     }
 }
 
