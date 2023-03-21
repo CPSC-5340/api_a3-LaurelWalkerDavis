@@ -8,17 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		ACF5E04029BE957F00DD981A /* Assignment3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5E03F29BE957F00DD981A /* Assignment3App.swift */; };
-		ACF5E04229BE957F00DD981A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5E04129BE957F00DD981A /* ContentView.swift */; };
+		ACF5E04229BE957F00DD981A /* Houses.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5E04129BE957F00DD981A /* Houses.swift */; };
 		ACF5E04429BE958000DD981A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF5E04329BE958000DD981A /* Assets.xcassets */; };
 		ACF5E04729BE958000DD981A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF5E04629BE958000DD981A /* Preview Assets.xcassets */; };
+		F5955DDD29C8EEC700EDF6D1 /* HousesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5955DDC29C8EEC700EDF6D1 /* HousesModel.swift */; };
+		F5955DE029C8F06C00EDF6D1 /* HouseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5955DDF29C8F06C00EDF6D1 /* HouseDetail.swift */; };
+		F5955DE229C8F0D200EDF6D1 /* HeadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5955DE129C8F0D200EDF6D1 /* HeadModel.swift */; };
+		F5955DE429C8F0DD00EDF6D1 /* TraitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5955DE329C8F0DD00EDF6D1 /* TraitModel.swift */; };
+		F5955DE629C8F5C700EDF6D1 /* HousesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5955DE529C8F5C700EDF6D1 /* HousesViewModel.swift */; };
+		F5955DEA29CA08F200EDF6D1 /* TraitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5955DE929CA08F200EDF6D1 /* TraitsView.swift */; };
+		F5955DEC29CA090100EDF6D1 /* HeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5955DEB29CA090100EDF6D1 /* HeadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ACF5E03C29BE957F00DD981A /* Assignment3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF5E03F29BE957F00DD981A /* Assignment3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment3App.swift; sourceTree = "<group>"; };
-		ACF5E04129BE957F00DD981A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ACF5E04129BE957F00DD981A /* Houses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Houses.swift; sourceTree = "<group>"; };
 		ACF5E04329BE958000DD981A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACF5E04629BE958000DD981A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F5955DDC29C8EEC700EDF6D1 /* HousesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesModel.swift; sourceTree = "<group>"; };
+		F5955DDF29C8F06C00EDF6D1 /* HouseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetail.swift; sourceTree = "<group>"; };
+		F5955DE129C8F0D200EDF6D1 /* HeadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadModel.swift; sourceTree = "<group>"; };
+		F5955DE329C8F0DD00EDF6D1 /* TraitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitModel.swift; sourceTree = "<group>"; };
+		F5955DE529C8F5C700EDF6D1 /* HousesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesViewModel.swift; sourceTree = "<group>"; };
+		F5955DE829C8FC3200EDF6D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F5955DE929CA08F200EDF6D1 /* TraitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitsView.swift; sourceTree = "<group>"; };
+		F5955DEB29CA090100EDF6D1 /* HeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +66,11 @@
 		ACF5E03E29BE957F00DD981A /* Assignment3 */ = {
 			isa = PBXGroup;
 			children = (
+				F5955DE829C8FC3200EDF6D1 /* Info.plist */,
 				ACF5E03F29BE957F00DD981A /* Assignment3App.swift */,
-				ACF5E04129BE957F00DD981A /* ContentView.swift */,
+				F5955DE729C8F5D000EDF6D1 /* ViewModels */,
+				F5955DDE29C8EECF00EDF6D1 /* Models */,
+				F5955DDB29C8ED4400EDF6D1 /* Views */,
 				ACF5E04329BE958000DD981A /* Assets.xcassets */,
 				ACF5E04529BE958000DD981A /* Preview Content */,
 			);
@@ -65,6 +83,35 @@
 				ACF5E04629BE958000DD981A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F5955DDB29C8ED4400EDF6D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACF5E04129BE957F00DD981A /* Houses.swift */,
+				F5955DDF29C8F06C00EDF6D1 /* HouseDetail.swift */,
+				F5955DE929CA08F200EDF6D1 /* TraitsView.swift */,
+				F5955DEB29CA090100EDF6D1 /* HeadView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F5955DDE29C8EECF00EDF6D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5955DDC29C8EEC700EDF6D1 /* HousesModel.swift */,
+				F5955DE329C8F0DD00EDF6D1 /* TraitModel.swift */,
+				F5955DE129C8F0D200EDF6D1 /* HeadModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F5955DE729C8F5D000EDF6D1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F5955DE529C8F5C700EDF6D1 /* HousesViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +184,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACF5E04229BE957F00DD981A /* ContentView.swift in Sources */,
+				F5955DE429C8F0DD00EDF6D1 /* TraitModel.swift in Sources */,
+				F5955DEC29CA090100EDF6D1 /* HeadView.swift in Sources */,
+				F5955DEA29CA08F200EDF6D1 /* TraitsView.swift in Sources */,
+				ACF5E04229BE957F00DD981A /* Houses.swift in Sources */,
+				F5955DDD29C8EEC700EDF6D1 /* HousesModel.swift in Sources */,
 				ACF5E04029BE957F00DD981A /* Assignment3App.swift in Sources */,
+				F5955DE029C8F06C00EDF6D1 /* HouseDetail.swift in Sources */,
+				F5955DE629C8F5C700EDF6D1 /* HousesViewModel.swift in Sources */,
+				F5955DE229C8F0D200EDF6D1 /* HeadModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +323,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment3/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Assignment3/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -297,7 +351,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment3/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Assignment3/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
