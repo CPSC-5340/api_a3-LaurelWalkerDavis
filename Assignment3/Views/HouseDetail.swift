@@ -20,7 +20,7 @@ struct HouseDetail: View {
                 }
                 Spacer()
                 VStack {
-                    Text("Heads of House: ").font(.headline)
+                    Text("Heads of House").font(.headline)
                     HeadView(heads: house.heads)
                 }
                 Spacer()
@@ -34,7 +34,7 @@ struct HouseDetail: View {
                 }
                 Spacer()
                 VStack {
-                    Text("Notable traits: ").font(.headline)
+                    Text("Notable traits").font(.headline)
                     TraitsView(traits: house.traits)
                 }
             }
